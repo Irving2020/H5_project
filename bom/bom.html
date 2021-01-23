@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="height: 2000px">
+<a href="bomtest.html">bomtest</a>
+<button class="btn">前进</button>
+<script type="text/javascript">
+    var btn = document.querySelector('.btn');
+    //    系统滚动事件   当页面滚动条发生任何改变的时候 都会被触发
+    window.onscroll = function () {
+        console.log('滚动')
+    };
+//       窗口改变事件   当浏览器窗口大小发生改变时  就会被触发
+    window.onresize = function () {
+        console.log('窗口发生改变')
+    };
+//    forward  前进
+//    back  后退
+//    go   跳转到任意页面  0代表当前   -1代表向后一页   1代表向前一页
+    btn.onclick = function () {
+        window.history.forward();
+    }
+    console.log(window.location.href);
+//  页面重定向
+//    window.location.href = 'http://jd.com'
+//    console.log(window.navigator.appName)
+//    console.log(window.navigator.appVersion)
+//    console.log(window.navigator.userAgent)
+//    读取设备   分辨率像素
+    console.log(window.screen.width)
+    console.log(window.screen.height)
+
+    
+    
+</script>
+</body>
+</html>

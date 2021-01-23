@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button class="btn">后退</button>
+<a href="bomtest2.html">bomtest2.html</a>
+<script type="text/javascript">
+  window.onload = function () {
+      var btn = document.querySelector('.btn');
+      btn.onclick = function () {
+        window.history.back();
+      }
+  }
+</script>
+</body>
+</html>
